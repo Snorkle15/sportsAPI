@@ -29,10 +29,10 @@ async function getScores() {
             scoreHolder.append(div);
 
             const title = document.createElement("h3");
-            title.textContent = game.home_team.full_name + " vs " + game.visitor_team.full_name;
+            title.textContent = game.visitor_team.full_name + " at " + game.home_team.full_name;
 
             const score = document.createElement("p");
-            score.textContent = game.home_team_score + " - " + game.visitor_team_score;
+            score.textContent = game.visitor_team_score + " - " + game.home_team_score;
 
             const status = document.createElement("p");
             status.textContent = game.status;
