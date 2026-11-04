@@ -17,6 +17,9 @@ async function getScores() {
 
         const scoreHolder = document.getElementById("scoreHolder");
 
+        // Asked Chat GPT How To Get Rid Of Old Ones
+        scoreHolder.replaceChildren();
+
         for (game of json.data) {
             const div = document.createElement("div");
             div.classList.add("card");
